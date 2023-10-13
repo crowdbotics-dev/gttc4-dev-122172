@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user_model
-from home.models import Cdrer,Cdrer
+from home.models import Cdrer,Xyutit,Xyutit
 from django.http import HttpRequest
 from django.utils.translation import gettext_lazy as _
 from allauth.account import app_settings as allauth_settings
@@ -79,4 +79,10 @@ class CdrerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Cdrer
+        fields = "__all__"
+
+class XyutitSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Xyutit
         fields = "__all__"

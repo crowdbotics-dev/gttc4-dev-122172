@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Cdrer
-admin.site.register(Cdrer)
+from .models import Xyutit
+admin.site.register(Xyutit)
 
 # Register your models here.
